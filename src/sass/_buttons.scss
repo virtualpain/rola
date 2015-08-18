@@ -1,9 +1,11 @@
 .btn {
+    border:0;
+    padding:0;
     text-align: center;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 
-    padding:.5rem 2rem;
+    padding:0 2rem;
     height: 36px;
     line-height: 36px;
     outline: 0 none;
@@ -14,4 +16,10 @@
     color:$white;
 
     cursor:pointer;
+    display: inline-block;
+    @include shadow(1);
+    @include transition-shadow(.5s);
+    &:hover {
+        @include shadow(2);
+    }
 }

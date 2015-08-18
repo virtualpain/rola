@@ -42,3 +42,16 @@
         url("#{$font-roboto-path}Roboto-Bold.ttf") format("truetype");
     font-weight: 700;
 }
+
+// Material Icons
+.material-icons {
+    &.tiny {
+        font-size:.8rem;
+    }
+    &.big {
+        font-size:2rem;
+    }
+    &.large {
+        font-size: 3em;
+    }
+}

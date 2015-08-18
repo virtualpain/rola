@@ -9,7 +9,7 @@ desc "Build all sass, css, and js files"
 task :default => [:clean,:build,:compile,:finishing]
 
 task :clean do
-    FileUtils.rm_rf('build/*')
+    FileUtils.rm_rf('build')
     FileUtils.mkdir('build')
 end
 

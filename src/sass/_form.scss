@@ -6,10 +6,30 @@ form.form {
         display: block;
         font-weight: 300;
         font-size: .8rem;
+        &.radio,&.checkbox {
+            font-weight: normal;
+            display: inline;
+            font-size: 1rem;
+            cursor:pointer;
+            margin-right: 1rem;
+            input[type=checkbox],
+            input[type=radio] {
+                margin-right: .5rem;
+                cursor:pointer;
+            }
+        }
     }
 
-    // TODO add more input types from css3
     input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=time],
+    input[type=week],
+    input[type=tel],
+    input[type=search],
+    input[type=month],
+    input[type=date],
+    input[type=datetime],
     textarea
     {
         @include border-box;
@@ -20,5 +40,14 @@ form.form {
         &:focus {
             border-bottom:2px solid $grey;
         }
+    }
+
+    select {
+        padding:0.5rem 1rem;
+        background-color: #fff;
+        width: 100%;
+        @include border-box;
+        border:0;
+        border-bottom: 1px solid $border-color;
     }
 }
