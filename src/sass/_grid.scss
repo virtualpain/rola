@@ -1,0 +1,74 @@
+// TODO include RTL mode
+.container {
+    margin:0 auto;
+    max-width: 1280px;
+    width:90%;
+    @include clearfix;
+
+    @include medium-and-up {
+        width:85%;
+    }
+
+    @include large-and-up {
+        width:70%;
+    }
+
+    .row {
+        margin:0 (-1*$gutter/2);
+        @include clearfix;
+        .col {
+            float:left;
+            @include border-box;
+            padding:0 ($gutter/2);
+
+            // mobile columns
+            $i:1;
+            @for $i from 1 through 12 {
+                &.s#{$i} {
+                    margin-left:0;
+                    width:(100/($columns/$i)) * 1%;
+                }
+            }
+            // mobile-offset
+            $i:1;
+            @for $i from 1 through 12 {
+                &.offset-s#{$i} {
+                    margin-left:(100/($columns/$i)) * 1%;
+                }
+            }
+
+            // Medium columns
+            @include medium-and-up {
+                $i:1;
+                @for $i from 1 through 12 {
+                    &.m#{$i} {
+                        margin-left:0;
+                        width:(100/($columns/$i)) * 1%;
+                    }
+                }
+                $i:1;
+                @for $i from 1 through 12 {
+                    &.offset-m#{$i} {
+                        margin-left:(100/($columns/$i)) * 1%;
+                    }
+                }
+            }
+
+            @include large-and-up {
+                $i:1;
+                @for $i from 1 through 12 {
+                    &.l#{$i} {
+                        margin-left:0;
+                        width:(100/($columns/$i)) * 1%;
+                    }
+                }
+                $i:1;
+                @for $i from 1 through 12 {
+                    &.offset-l#{$i} {
+                        margin-left:(100/($columns/$i)) * 1%;
+                    }
+                }
+            }
+        }
+    }
+}

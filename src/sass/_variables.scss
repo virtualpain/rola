@@ -1,0 +1,27 @@
+// TODO add !default to each variables
+
+// font related
+$font-family:"Roboto",arial,helvetica,sans-serif;
+$font-size:1rem;
+$color:#333;
+
+// fonts
+$font-roboto-path:"../fonts/roboto/";
+
+// links
+$link-color:$blue;
+
+// media query breakpoint
+$small:600px;
+$small-up:$small+1px;
+$medium:992px;
+$medium-up:$medium+1px;
+$large:1200px;
+$large-up:$large+1px;
+
+// grid
+$gutter:1.5rem;
+$columns:12;
+
+// other
+$border-color:$grey-lighten-1;

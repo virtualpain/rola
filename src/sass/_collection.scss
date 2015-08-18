@@ -1,0 +1,17 @@
+ul,ol {
+    &.collection {
+        @include no-style-list;
+        border:1px solid $border-color;
+        li {
+            display: block;
+            border-bottom:1px solid $border-color;
+            a,.collection-content {
+                display: block;
+                padding:1rem;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}

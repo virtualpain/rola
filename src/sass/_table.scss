@@ -1,0 +1,59 @@
+// table will need .table class so we will not bother
+// default table style
+table.table {
+    width: 100%;
+    thead {
+        tr {
+            border-bottom: 1px solid $border-color;
+            th {
+                padding:1rem;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                padding:1rem;
+            }
+        }
+    }
+
+    &.bordered {
+        tbody {
+            tr {
+                border-bottom: 1px solid $border-color;
+            }
+        }
+    }
+
+    &.strip,&.zebra {
+        tbody {
+            tr {
+                &:nth-child(even)
+                {
+                    td {
+                        background-color: $grey-lighten-3;
+                    }
+                }
+            }
+        }
+    }
+    &.center {
+        thead {
+            tr {
+                th {
+                    text-align: center;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

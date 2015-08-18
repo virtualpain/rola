@@ -1,0 +1,23 @@
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+
+.right {
+    float:right;
+}
+.left {
+    float:left;
+}
+
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

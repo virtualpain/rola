@@ -1,0 +1,28 @@
+@mixin no-style-list {
+    margin:0;
+    padding:0;
+    li {
+        list-style: none;
+    }
+}
+
+@mixin clearfix {
+    *zoom:1;
+    &:before {
+        clear:both;
+    }
+    &:after {
+        clear:both;
+        content:" ";
+        display:table;
+    }
+}
+
+@mixin border-box {
+    box-sizing: border-box;
+}
+
+@mixin shadow($depth)
+{
+    // TODO shadow and animation
+}

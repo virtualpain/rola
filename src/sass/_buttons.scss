@@ -1,0 +1,17 @@
+.btn {
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    padding:.5rem 2rem;
+    height: 36px;
+    line-height: 36px;
+    outline: 0 none;
+
+    border-radius:2px;
+
+    background-color: $grey;
+    color:$white;
+
+    cursor:pointer;
+}

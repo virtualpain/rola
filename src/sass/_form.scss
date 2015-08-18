@@ -1,0 +1,24 @@
+// like table, form will use .form so default form look and feel will not
+// be changed
+
+form.form {
+    label {
+        display: block;
+        font-weight: 300;
+        font-size: .8rem;
+    }
+
+    // TODO add more input types from css3
+    input[type=text],
+    textarea
+    {
+        @include border-box;
+        width: 100%;
+        border:0;
+        border-bottom: 1px solid $border-color;
+        padding:.5rem 0;
+        &:focus {
+            border-bottom:2px solid $grey;
+        }
+    }
+}
