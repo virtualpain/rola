@@ -50,4 +50,24 @@ form.form {
         border:0;
         border-bottom: 1px solid $border-color;
     }
+
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=time],
+    input[type=week],
+    input[type=tel],
+    input[type=search],
+    input[type=month],
+    input[type=date],
+    input[type=datetime],
+    input[type=checkbox],
+    input[type=radio],
+    textarea,
+    select
+    {
+        &:focus,&:active {
+            outline:0;
+        }
+    }
 }

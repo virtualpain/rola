@@ -1,0 +1,6 @@
+.card {
+    @include shadow(1);
+    padding:1rem;
+    background-color: $grey-lighten-2;
+    color:$black;
+}
