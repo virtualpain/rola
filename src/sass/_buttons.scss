@@ -10,14 +10,13 @@
     line-height: 36px;
     outline: 0 none;
 
-    border-radius:2px;
+    // border-radius:2px;
 
     background-color: $grey;
     color:$white;
 
     cursor:pointer;
     display: inline-block;
-    @include shadow(1);
     @include transition-shadow(.5s);
     &:hover {
         @include shadow(2);

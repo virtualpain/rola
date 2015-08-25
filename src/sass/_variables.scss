@@ -1,12 +1,15 @@
 // TODO add !default to each variables
 
 // font related
-$font-family:"Roboto",arial,helvetica,sans-serif;
-$font-size:1rem;
-$color:#333;
+$font-family:Arial,helvetica,sans-serif;
+$header-font-family:"Open Sans",Arial,helvetica,sans-serif;
+$font-size:.9rem;
+$color:#444444;
+$line-height:1.5rem;
 
 // fonts
-$font-roboto-path:"../fonts/roboto/";
+// $font-roboto-path:"../fonts/roboto/";
+$font-opensans-path:"../fonts/opensans/";
 
 // links
 $link-color:$blue;

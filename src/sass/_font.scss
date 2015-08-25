@@ -1,46 +1,79 @@
+// By default, all text should use Arial (or Helvetica, or sans-serif) font,
+// but when it is about title, menu, or highlight use Open Sans
+// and Open sans light for bigger size text like header or navigation
+
 // Roboto font
+// @font-face {
+//     font-family: "Roboto";
+//     src:
+//         // url("#{$font-roboto-path}Roboto-Thin.woff2") format("woff2"),
+//         // url("#{$font-roboto-path}Roboto-Thin.woff") format("woff"),
+//         url("#{$font-roboto-path}Roboto-Thin.ttf") format("truetype");
+//     font-weight: 200;
+// }
+// @font-face {
+//     font-family: "Roboto";
+//     src:
+//         // url("#{$font-roboto-path}Roboto-Light.woff2") format("woff2"),
+//         // url("#{$font-roboto-path}Roboto-Light.woff") format("woff"),
+//         url("#{$font-roboto-path}Roboto-Light.ttf") format("truetype");
+//     font-weight: 300;
+// }
+//
+// @font-face {
+//     font-family: "Roboto";
+//     src:
+//         // url("#{$font-roboto-path}Roboto-Regular.woff2") format("woff2"),
+//         // url("#{$font-roboto-path}Roboto-Regular.woff") format("woff"),
+//         url("#{$font-roboto-path}Roboto-Regular.ttf") format("truetype");
+//     font-weight: 400;
+// }
+//
+// @font-face {
+//     font-family: "Roboto";
+//     src:
+//         // url("#{$font-roboto-path}Roboto-Medium.woff2") format("woff2"),
+//         // url("#{$font-roboto-path}Roboto-Medium.woff") format("woff"),
+//         url("#{$font-roboto-path}Roboto-Medium.ttf") format("truetype");
+//     font-weight: 500;
+// }
+//
+// @font-face {
+//     font-family: "Roboto";
+//     src:
+//         // url("#{$font-roboto-path}Roboto-Bold.woff2") format("woff2"),
+//         // url("#{$font-roboto-path}Roboto-Bold.woff") format("woff"),
+//         url("#{$font-roboto-path}Roboto-Bold.ttf") format("truetype");
+//     font-weight: 700;
+// }
+
 @font-face {
-    font-family: "Roboto";
+    font-family: "Open Sans";
     src:
-        // url("#{$font-roboto-path}Roboto-Thin.woff2") format("woff2"),
-        // url("#{$font-roboto-path}Roboto-Thin.woff") format("woff"),
-        url("#{$font-roboto-path}Roboto-Thin.ttf") format("truetype");
+        url("#{$font-opensans-path}OpenSans-Light.ttf") format("truetype");
     font-weight: 200;
-}
-@font-face {
-    font-family: "Roboto";
-    src:
-        // url("#{$font-roboto-path}Roboto-Light.woff2") format("woff2"),
-        // url("#{$font-roboto-path}Roboto-Light.woff") format("woff"),
-        url("#{$font-roboto-path}Roboto-Light.ttf") format("truetype");
-    font-weight: 300;
 }
 
 @font-face {
-    font-family: "Roboto";
+    font-family: "Open Sans";
     src:
-        // url("#{$font-roboto-path}Roboto-Regular.woff2") format("woff2"),
-        // url("#{$font-roboto-path}Roboto-Regular.woff") format("woff"),
-        url("#{$font-roboto-path}Roboto-Regular.ttf") format("truetype");
+        url("#{$font-opensans-path}OpenSans-Regular.ttf") format("truetype");
     font-weight: 400;
 }
 
+
 @font-face {
-    font-family: "Roboto";
+    font-family: "Open Sans";
     src:
-        // url("#{$font-roboto-path}Roboto-Medium.woff2") format("woff2"),
-        // url("#{$font-roboto-path}Roboto-Medium.woff") format("woff"),
-        url("#{$font-roboto-path}Roboto-Medium.ttf") format("truetype");
-    font-weight: 500;
+        url("#{$font-opensans-path}OpenSans-Bold.ttf") format("truetype");
+    font-weight: 700;
 }
 
 @font-face {
-    font-family: "Roboto";
+    font-family: "Open Sans";
     src:
-        // url("#{$font-roboto-path}Roboto-Bold.woff2") format("woff2"),
-        // url("#{$font-roboto-path}Roboto-Bold.woff") format("woff"),
-        url("#{$font-roboto-path}Roboto-Bold.ttf") format("truetype");
-    font-weight: 700;
+        url("#{$font-opensans-path}OpenSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
 }
 
 // Material Icons
