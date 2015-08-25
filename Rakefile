@@ -24,6 +24,7 @@ task :finishing => [:copy_fonts]
 
 task :copy_fonts do
     FileUtils.cp_r "src/fonts/roboto", "build/fonts/"
+    FileUtils.cp_r "src/fonts/opensans", "build/fonts/"
     FileUtils.cp_r "src/fonts/material-design-icons", "build/fonts/"
 end
 
