@@ -1,0 +1,57 @@
+// Navbar here should be simple
+// nav > .site-logo + .menus
+
+nav.navbar {
+	@include clearfix;
+	// line-height: 1rem;
+	background-color: $navbar-background-color;
+	// padding:1rem;
+	color:$navbar-text-color;
+	a {
+		color:$navbar-link-color;
+		&:hover {
+			background-color: $blue-lighten-1;
+		}
+	}
+
+	a.site-logo {
+		float:left;
+		font-size:1.25rem;
+		padding:1rem;
+		display: block;
+	}
+
+	i.material-icons {
+		font-size:1rem;
+	}
+
+	ul.menu {
+		@include no-style-list();
+		li {
+			float:left;
+			list-style: none;
+			a {
+				display:block;
+				padding:1rem;
+
+			}
+		}
+
+		&.navbar-menu {
+			float:left !important;
+		}
+	}
+
+	@include medium-and-down()
+	{
+		a.mobile-menu {
+			display:block;
+		}
+		ul.menu {
+			display:none;
+			li {
+				float:none;
+			}
+		}
+	}
+}
