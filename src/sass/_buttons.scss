@@ -18,6 +18,8 @@
     cursor:pointer;
     display: inline-block;
     @include transition-shadow(.5s);
+
+    @include shadow(1);
     &:hover {
         @include shadow(2);
     }
