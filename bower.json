@@ -1,0 +1,24 @@
+{
+  "name": "rola",
+  "version": "0.1.0",
+  "authors": [
+    "Alvina Putri nivni91@gmail.com"
+  ],
+  "description": "Very simple CSS Framework",
+  "keywords": [
+    "css",
+    "framework",
+    "mobile",
+    "simple"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "IdeasNTodos.md",
+    "Gemfile"
+  ]
+}

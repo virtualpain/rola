@@ -10,7 +10,7 @@ making developers able to extends or reuse elements using mixins, functions, etc
 
 Use bower to download
 
-`bower install rolacss`
+`bower install rola`
 
 You will need jQuery to run Rola's javascripts components
 
