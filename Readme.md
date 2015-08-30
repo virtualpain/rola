@@ -9,8 +9,6 @@ Use bower to download
 
 `bower install rola`
 
-You will need jQuery to run Rola's javascripts components
-
 ## License
 
 Copyright (c) 2015 Alvina Putri
