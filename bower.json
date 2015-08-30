@@ -4,6 +4,9 @@
   "authors": [
     "Alvina Putri nivni91@gmail.com"
   ],
+  "main": [
+      "src/sass/rola.scss"
+  ],
   "description": "Very simple CSS Framework",
   "keywords": [
     "css",
