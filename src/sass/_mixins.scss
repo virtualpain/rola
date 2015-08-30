@@ -48,3 +48,9 @@
 {
     @include transition(box-shadow $time);
 }
+
+@mixin square-size($size)
+{
+	width:$size;
+	height:$size;
+}
