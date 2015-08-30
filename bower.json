@@ -7,6 +7,9 @@
   "main": [
       "src/sass/rola.scss"
   ],
+  "dependencies": {
+      "jquery":"~2.1.4"
+  },
   "description": "Very simple CSS Framework",
   "keywords": [
     "css",
