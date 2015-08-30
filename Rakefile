@@ -6,26 +6,20 @@ require "sass"
 build_dirs = ['css','js','images','fonts','etc']
 
 desc "Build all sass, css, and js files"
-task :default => [:clean,:build,:compile,:finishing]
+task :default => [:all]
+
+task :all => [:clean,:compile,:finishing]
 
 task :clean do
-    FileUtils.rm_rf('build')
-    FileUtils.mkdir('build')
-end
-
-task :build do
-    build_dirs.each do |dir|
-        FileUtils.mkdir("build/#{dir}") unless File.exists? "build/#{dir}"
-    end
+    FileUtils.rm_rf('css/*')
+    FileUtils.rm_rf('js/*')
 end
 
 task :compile => [:minify_css,:compile_sass,:minify_js]
-task :finishing => [:copy_fonts]
 
-task :copy_fonts do
-    FileUtils.cp_r "src/fonts/roboto", "build/fonts/"
-    FileUtils.cp_r "src/fonts/opensans", "build/fonts/"
-    FileUtils.cp_r "src/fonts/material-design-icons", "build/fonts/"
+desc "Finishing touch after compilation"
+task :finishing do
+    # Do nothing now
 end
 
 # minify_js will minify all js files in src/js into single
@@ -37,7 +31,7 @@ task :minify_js do
         puts "Minifying #{file}"
         result += Uglifier.compile(File.read(file))
     end
-    File.write('build/js/rola.min.js',result)
+    File.write('js/rola.min.js',result)
 end
 
 # Read build whether there are any file
@@ -49,9 +43,9 @@ task :minify_css do
         puts "Minifying #{file}"
         result += CSSminify.compress(File.read(file))
     end
-    File.write('build/css/rola-other.min.css',result)
+    File.write('css/rola-other.min.css',result)
 end
 
 task :compile_sass do
-    sh "sass --scss --style compressed --sourcemap=none src/sass/rola.scss build/css/rola.min.css"
+    sh "sass --scss --style compressed --sourcemap=none src/sass/rola.scss css/rola.min.css"
 end
