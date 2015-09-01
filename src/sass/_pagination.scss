@@ -1,0 +1,32 @@
+ul,ol {
+    &.pagination {
+        @include no-style-list;
+        @include clearfix;
+        li {
+            border:1px solid $border-color;
+            border-right:0;
+            float:left;
+            a {
+                display:block;
+                padding:10px 15px;
+                &:hover {
+                    background-color: $primary-color;
+                    color:$white;
+                }
+            }
+            &:hover {
+                border-color: $primary-color;
+            }
+            &:last-child {
+                border-right: 1px solid $border-color;
+            }
+            &.active {
+                border-color: $primary-color;
+                a {
+                    background-color: $primary-color;
+                    color:$white;
+                }
+            }
+        }
+    }
+}

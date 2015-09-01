@@ -1,6 +1,13 @@
 .card {
     @include shadow(1);
     padding:1rem;
+    margin:10px 0;
     background-color: $grey-lighten-2;
     color:$black;
+    &.panel {
+        @include transition-shadow(500ms);
+        &:hover {
+            @include shadow(3);
+        }
+    }
 }

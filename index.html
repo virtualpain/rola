@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <title>ROLA UI Framework</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/build/css/rola.min.css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="/build/css/rola-other.min.css" media="screen" charset="utf-8">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/css/rola.min.css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="/css/rola-other.min.css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     </head>
     <body>
         <nav class="navbar blue white-text">
@@ -157,13 +157,38 @@
             </form>
             <hr>
             <h2>Other Components</h2>
-            <div class="row">
-                <div class="col s12 m6 l4">
-                    <div class="card">
-                        Hello World
-                    </div>
-                </div>
+            <h3>Card and Panel</h3>
+            <p>
+                Card is just a div area. It can be colored. Panel is just a card
+                but it is also a material so when it hovered, it will float
+                (creating shadow).
+            </p>
+            <div class="card">
+                Hello World
             </div>
+            <div class="card panel blue-lighten-3">
+                This is a panel example
+            </div>
+            <h3>Breadcrumbs or navpath</h3>
+            <ul class="breadcrumbs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contents</a></li>
+                <li><a href="#">Contents</a></li>
+            </ul>
+            <h3>Pagination</h3>
+            <ul class="pagination">
+                <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="active"><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+            </ul>
+            <h3>Labels</h3>
+            <p>
+                Example of a label <span class="label red text-white">IMPORTANT</span>
+            </p>
         </div>
     </body>
 </html>
