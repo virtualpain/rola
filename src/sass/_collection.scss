@@ -3,9 +3,10 @@ ul,ol {
         @include no-style-list;
         border:1px solid $border-color;
         li {
+            padding:5px;
             display: block;
             border-bottom:1px solid $border-color;
-            a,.collection-content {
+            & > a,.collection-content {
                 display: block;
                 padding:1rem;
             }

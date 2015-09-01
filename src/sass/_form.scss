@@ -1,11 +1,13 @@
-// like table, form will use .form so default form look and feel will not
-// be changed
-
-form.form {
+form {
     label {
         display: block;
-        font-weight: 300;
-        font-size: .8rem;
+        font-weight: bold;
+        padding:1rem 0 .5rem;
+        cursor:pointer;
+        // font-size: .8rem;
+        i {
+            margin-right: 1rem;
+        }
         &.radio,&.checkbox {
             font-weight: normal;
             display: inline;
@@ -19,7 +21,14 @@ form.form {
         }
     }
 
+    input[type="checkbox"],
+    input[type="radio"]
+    {
+        cursor:pointer;
+    }
+
     input[type=text],
+    input[type=password],
     input[type=email],
     input[type=url],
     input[type=time],
@@ -31,6 +40,7 @@ form.form {
     input[type=datetime],
     textarea
     {
+        // cursor:pointer;
         @include border-box;
         width: 100%;
         border:0;
@@ -65,6 +75,7 @@ form.form {
     }
 
     input[type=text],
+    input[type=password],
     input[type=email],
     input[type=url],
     input[type=time],
