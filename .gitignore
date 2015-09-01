@@ -1,3 +1,5 @@
 build/*
 *.lock
 .sass-cache
+.imdone
+bower_components
