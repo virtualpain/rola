@@ -54,3 +54,9 @@
 	width:$size;
 	height:$size;
 }
+
+@mixin responsive-img
+{
+    max-width: 100%;
+    height:auto;
+}
