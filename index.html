@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/rola.min.css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="/css/rola-other.min.css" media="screen" charset="utf-8">
+        <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
         <link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     </head>
     <body>
@@ -103,6 +104,38 @@
                 <a href="javascript:;" class="btn bg-red">A button</a>
                 <a href="javascript:;" class="btn bg-green">A button</a>
             </p>
+            <p>
+                <a href="javascript:;" class="btn blue"><i class="material-icons left">public</i> Button with icon</a>
+                <a href="javascript:;" class="btn blue"><i class="fa fa-globe left"></i> Button with icon</a>
+            </p>
+            <p>
+                Button groups
+                <code>.btn-group</code>
+                and
+                button toolbar
+                <code>.btn-toolbar</code>
+            </p>
+            <p>
+                <div class="btn-group">
+                    <a href="#" class="btn blue">Button 1</a>
+                    <a href="#" class="btn blue">Button 2</a>
+                    <a href="#" class="btn blue">Button 3</a>
+                </div>
+            </p>
+            <p>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <a href="#" class="btn blue">Button 1</a>
+                        <a href="#" class="btn blue">Button 2</a>
+                        <a href="#" class="btn blue">Button 3</a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn blue">Button 1</a>
+                        <a href="#" class="btn blue">Button 2</a>
+                        <a href="#" class="btn blue">Button 3</a>
+                    </div>
+                </div>
+            </p>
             <h2>Forms</h2>
             <form class="form" action="index.html" method="get">
                 <p>
@@ -157,17 +190,92 @@
             </form>
             <hr>
             <h2>Other Components</h2>
-            <h3>Card and Panel</h3>
-            <p>
-                Card is just a div area. It can be colored. Panel is just a card
-                but it is also a material so when it hovered, it will float
-                (creating shadow).
-            </p>
-            <div class="card">
-                Hello World
+            <h3>Card</h3>
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img data-src="holder.js/400x200?theme=social" alt="A" />
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                Hello World!
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <button type="button" name="button" class="btn blue">Do something</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-img">
+                            <img data-src="holder.js/400x200?theme=industrial" alt="A" />
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title truncate">
+                                Hello World! This is a really long title but it is truncated
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <div class="links">
+                                    <a href="javascript:;">Edit</a>
+                                    <a href="javascript:;">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card card-fixed">
+                        <div class="card-img">
+                            <img data-src="holder.js/400x200?theme=sky" alt="A" />
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title truncate">
+                                Fixed height Card
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card panel blue-lighten-3">
-                This is a panel example
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">
+                                Just another looks
+                            </div>
+                            <div class="card-subtitle">
+                                Subtitle
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img data-src="holder.js/400x200?theme=sky" alt="A" />
+                        </div>
+                        <div class="card-content">
+                            <div class="card-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Panel</h3>
+            <div class="panel">
+                This is a panel content.
             </div>
             <h3>Breadcrumbs or navpath</h3>
             <ul class="breadcrumbs">
@@ -189,6 +297,102 @@
             <p>
                 Example of a label <span class="label red text-white">IMPORTANT</span>
             </p>
+            <h3>Vertical Navigation</h3>
+            <p>
+                <code>.nav-vertical</code>
+            </p>
+            <ul class="nav-vertical">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            <h3>Horizontal Navigation</h3>
+            <p>
+                <code>.nav-horizontal</code>
+            </p>
+            <ul class="nav-horizontal">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            <h3>Tab Navigation</h3>
+            <p>
+                <code>.nav-tabs</code>
+                or
+                <code>.nav-tab</code>
+            </p>
+            <ul class="nav-tabs">
+                <li class="active"><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            <p>
+                The example above is just a navigation. To use real Tab navigation
+                we will need <code>.tab-container</code>.
+            </p>
+            <div class="tab-container">
+                <ul class="nav-tabs">
+                    <li data-tab="1"><a href="#">Menu 1</a></li>
+                    <li data-tab="2"><a href="#">Menu 2</a></li>
+                    <li data-tab="3"><a href="#">Menu 3</a></li>
+                </ul>
+                <div class="tab-content" id="tab-content-1">
+                    <p>
+                        This is tab content 1.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="tab-content" id="tab-content-2">
+                    <p>
+                        This is tab content 2.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="tab-content" id="tab-content-3">
+                    <p>
+                        This is tab content 3.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <h3>Sub Navigation</h3>
+            <p>
+                For things like filter, etc.
+            </p>
+            <ul class="nav-sub">
+                <li class="title">Filter</li>
+                <li class="active"><a href="#">All</a></li>
+                <li><a href="#">Activated</a></li>
+                <li><a href="#">Expired</a></li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h3>Accordion</h3>
+            <div class="accordion">
+                <div class="accordion-content">
+                    <div class="accordion-title">
+                        Banana
+                    </div>
+                    <div class="accordion-text">
+                        <p>
+                            I like banana
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-title">
+                        Grape
+                    </div>
+                    <div class="accordion-text">
+                        <p>
+                            I dont really like grape
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <script src="/js/rola.min.js" charset="utf-8"></script>
+        <script src="/bower_components/holderjs/holder.min.js" charset="utf-8"></script>
     </body>
 </html>
