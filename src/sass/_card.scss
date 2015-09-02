@@ -1,13 +1,32 @@
 .card {
-    @include shadow(1);
-    padding:1rem;
     margin:10px 0;
-    background-color: $grey-lighten-2;
-    color:$black;
-    &.panel {
-        @include transition-shadow(500ms);
-        &:hover {
-            @include shadow(3);
+    border:1px solid $border-color;
+    .card-content {
+        padding:10px;
+        .card-title {
+            font-size:1.3rem;
+            margin:10px 0;
+        }
+        .card-subtitle {
+            @extend .muted;
+        }
+        .card-text {
         }
     }
+    .card-img {
+        img {
+            @include responsive-img;
+        }
+    }
+    // &.card-fixed {
+    //     height:400px;
+    //     overflow: hidden;
+    // }
+}
+
+.panel {
+    padding:1rem;
+    margin:1rem 0;
+    background-color: $grey-lighten-2;
+    color:$black;
 }
