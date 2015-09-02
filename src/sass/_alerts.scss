@@ -1,0 +1,21 @@
+.alert {
+	padding:1rem;
+	color:#fff;
+    @include clearfix;
+	&.alert-info {
+		background-color: $blue;
+	}
+	&.alert-warning {
+		background-color:$yellow-lighten-1;
+		color:#000;
+	}
+	&.alert-success {
+		background-color: $green;
+	}
+	&.alert-error {
+		background-color: $red;
+	}
+    a.close {
+        float:right;
+    }
+}
