@@ -2,6 +2,7 @@ ul,ol {
     &.pagination {
         @include no-style-list;
         @include clearfix;
+        margin:10px 0;
         li {
             border:1px solid $border-color;
             border-right:0;

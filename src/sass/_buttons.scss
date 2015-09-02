@@ -33,4 +33,8 @@
         height: 45px;
         line-height: 45px;
     }
+    &.full {
+        width: 100%;
+        @include border-box;
+    }
 }
