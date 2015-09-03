@@ -5,9 +5,11 @@
         .accordion-title {
             cursor:pointer;
             font-weight: bold;
+            background-color: $accordion-title-bgcolor;
         }
         .accordion-text {
             display: none;
+            background-color: $accordion-text-bgcolor;
             &.active {
                 display:block;
             }

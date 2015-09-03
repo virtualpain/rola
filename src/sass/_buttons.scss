@@ -11,12 +11,12 @@
 
     border-radius:2px;
 
-    background-color: $grey;
-    color:$white;
+    background-color: $button-default-color;
+    color:$button-default-text-color;
 
     cursor:pointer;
     display: inline-block;
-    @include transition-shadow(.5s);
+    @include transition-shadow($button-hover-transition-time);
 
     // @include shadow(1);
     &:hover {
@@ -37,7 +37,8 @@
         @include border-box;
     }
     &.btn-link {
-        
+        background-color: transparent;
+        color:$link-color;
     }
 }
 

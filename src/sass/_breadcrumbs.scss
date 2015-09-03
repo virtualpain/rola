@@ -2,20 +2,21 @@ ul,ol {
     &.breadcrumbs,&.nav-path,&.navpath {
         @include no-style-list;
         @include clearfix;
+        background-color: $breadcrumbs-bgcolor;
         padding:10px 0;
         li {
             float:left;
             a {
-                color:$grey;
+                color:$breadcrumbs-link-color;
                 font-size:.8rem;
                 padding:0 5px 0 0;
                 &:before {
                     content:" / ";
                 }
                 &:hover {
-                    color:$black;
+                    color:$breadcrumbs-link-hover-color;
                     &:before {
-                        color:$grey;
+                        color:$breadcrumbs-link-color;
                     }
                 }
             }

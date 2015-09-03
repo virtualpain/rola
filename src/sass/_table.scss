@@ -35,7 +35,7 @@ table.table {
                 &:nth-child(even)
                 {
                     td {
-                        background-color: $grey-lighten-3;
+                        background-color:$table-zebra-bgcolor;
                     }
                 }
             }

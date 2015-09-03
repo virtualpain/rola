@@ -17,7 +17,7 @@ hr {
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
-    font-family:"Open Sans",Arial,helvetica,sans-serif;
+    font-family:$header-font-family;
 }
 
 blockquote {
@@ -28,5 +28,5 @@ blockquote {
 }
 
 code {
-    color:$red;
+    color:$code-color;
 }

@@ -1,19 +1,19 @@
 .alert {
 	padding:1rem;
-	color:#fff;
+	color:$alert-bgcolor;
     @include clearfix;
 	&.alert-info {
-		background-color: $blue;
+		background-color: $info-color;
 	}
 	&.alert-warning {
-		background-color:$yellow-lighten-1;
-		color:#000;
+		background-color:$warning-color;
+		color:$black;
 	}
 	&.alert-success {
-		background-color: $green;
+		background-color: $success-color;
 	}
 	&.alert-error {
-		background-color: $red;
+		background-color: $danger-color;
 	}
     a.close {
         float:right;

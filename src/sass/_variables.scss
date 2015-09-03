@@ -1,5 +1,3 @@
-// TODO add !default to each variables
-
 // default Colors
 $primary-color:$blue !default;
 $info-color:$blue !default;
@@ -13,6 +11,9 @@ $header-font-family:"Open Sans",Arial,helvetica,sans-serif !default;
 $font-size:.9rem !default;
 $color:#444444 !default;
 $line-height:1.5rem !default;
+$code-color:$red !default;
+$muted-color:$grey !default;
+$meta-color:$grey-lighten-1 !default;
 
 // fonts
 $font-roboto-path:"../fonts/roboto/" !default;
@@ -37,7 +38,40 @@ $columns:12 !default;
 // border
 $border-color:$grey-lighten-2 !default;
 
+// table
+$table-zebra-bgcolor: $grey-lighten-3 !default;
+
+///////////////
+// COMPONENTS
+///////////////
+
 // navbar
 $navbar-background-color:$blue !default;
 $navbar-text-color:$white !default;
 $navbar-link-color:$white !default;
+
+// accordion
+$accordion-title-bgcolor:$white !default;
+$accordion-text-bgcolor:$white !default;
+
+// alerts
+$alert-bgcolor:$white !default;
+
+// breadcrumbs
+$breadcrumbs-bgcolor:#F2F2F2 !default;
+$breadcrumbs-link-color:$grey !default;
+$breadcrumbs-link-hover-color:$black !default;
+
+// buttons
+$button-default-color:$grey !default;
+$button-default-text-color:$white !default;
+$button-hover-transition-time:.5s !default;
+
+// panel
+$panel-default-bgcolor:$grey-lighten-2 !default;
+$panel-default-color:$black !default;
+$panel-padding:1rem !default;
+
+// label
+$label-default-bgcolor:$grey !default;
+$label-default-color:$white !default;
