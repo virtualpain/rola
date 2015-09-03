@@ -22,6 +22,7 @@ ul,ol {
             }
             &:first-child {
                 a {
+                    padding-left: 10px;
                     &:before {
                         content:"";
                     }
