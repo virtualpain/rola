@@ -2,8 +2,20 @@ require "fileutils"
 require "uglifier"
 require "cssminify"
 require "sass"
+require "json"
 
-build_dirs = ['css','js','images','fonts','etc']
+bower_info = JSON.parse(File.read('bower.json'))
+version = bower_info['version']
+copyright_text = <<END
+/*
+    Rola UI Framework
+    (c) YEAR virtualpain (Alvina Putri)
+    Version VERSION
+ */
+
+END
+
+copyright_text = copyright_text.gsub('VERSION',version).gsub('YEAR',Time.now.year.to_s)
 
 desc "Build all sass, css, and js files"
 task :default => [:all]
@@ -26,7 +38,7 @@ end
 # build/js/rola.min.js
 task :minify_js do
     files = Dir["src/js/*.js"]
-    result = ""
+    result = "#{copyright_text}"
     files.each do |file|
         puts "Minifying #{file}"
         result += Uglifier.compile(File.read(file))
@@ -38,7 +50,7 @@ end
 #
 task :minify_css do
     files = Dir["src/css/*.css"]
-    result = ""
+    result = "#{copyright_text}"
     files.each do |file|
         puts "Minifying #{file}"
         result += CSSminify.compress(File.read(file))
@@ -48,6 +60,9 @@ end
 
 task :compile_sass do
     sh "sass --scss --style compressed --sourcemap=none src/sass/rola.scss css/rola.min.css"
+    compiled = File.read "css/rola.min.css"
+    compiled = copyright_text + compiled
+    File.write('css/rola.min.css',compiled)
 end
 
 task :css => [:compile_sass]
