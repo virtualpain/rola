@@ -1,7 +1,8 @@
 # ROLA
 
-Rola is UI Framework designed for desktop and mobile by follow _some_ of Google's
-Material Design guidelines.
+Rola is UI Framework created to help you build website quickly with pre made
+components and you can even customize what you need using Rola's SASS mixins,
+variables, among other things.
 
 ## Installing
 
@@ -9,24 +10,9 @@ Use bower to download
 
 `bower install rola`
 
+To develop and build Rola, you will need Ruby and bunch of ruby gems defined
+in `Gemfile`.
+
 ## License
 
-Copyright (c) 2015 Alvina Putri
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT. See `License.md` file.
