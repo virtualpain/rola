@@ -35,6 +35,24 @@ nav.navbar {
 				padding:1rem;
 
 			}
+			ul.dropdown {
+				margin:0;
+				padding:0;
+				position: absolute;
+				background-color: $navbar-background-color;
+				display: none;
+				li {
+					float:none;
+					a {
+						padding:10px;
+					}
+				}
+			}
+			&:hover {
+				ul.dropdown {
+					display: block;
+				}
+			}
 		}
 
 		&.navbar-menu {
