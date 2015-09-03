@@ -3,7 +3,7 @@ ul,ol {
         @include no-style-list;
         @include clearfix;
         background-color: $breadcrumbs-bgcolor;
-        padding:10px 0;
+        padding:$breadcrumbs-padding;
         li {
             float:left;
             a {
@@ -22,7 +22,6 @@ ul,ol {
             }
             &:first-child {
                 a {
-                    padding-left: 10px;
                     &:before {
                         content:"";
                     }
