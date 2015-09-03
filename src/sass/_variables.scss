@@ -75,3 +75,7 @@ $panel-padding:1rem !default;
 // label
 $label-default-bgcolor:$grey !default;
 $label-default-color:$white !default;
+
+// navigations
+$nav-hover-color:darken($link-color,20%) !default;
+$nav-hover-bgcolor:$grey-lighten-4 !default;
