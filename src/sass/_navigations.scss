@@ -81,6 +81,7 @@ ul,ol {
 .tab-container {
     @include clearfix;
     &.tab-vertical {
+        // TODO make sure in mobile, all width become 100%
         ul,ol {
             &.nav-tabs {
                 float:left;
