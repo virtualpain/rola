@@ -1,0 +1,16 @@
+.panel {
+    margin:1rem 0;
+    color:$panel-default-color;
+    background-color: $panel-default-bgcolor;
+    border:1px solid $border-color;
+    &.panel-padded {
+        padding:$panel-padding;
+    }
+    .panel-title {
+        padding:$panel-padding;
+    }
+    .panel-content
+    {
+        padding:$panel-padding+10px;
+    }
+}
