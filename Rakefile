@@ -18,7 +18,9 @@ END
 copyright_text = copyright_text.gsub('VERSION',version).gsub('YEAR',Time.now.year.to_s)
 
 desc "Build all sass, css, and js files"
-task :default => [:all]
+task :default => [:all] do
+    puts "build version #{version}"
+end
 
 task :all => [:clean,:compile,:finishing]
 
