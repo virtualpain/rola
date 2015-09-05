@@ -5,7 +5,7 @@ require "sass"
 require "json"
 
 bower_info = JSON.parse(File.read('bower.json'))
-version = bower_info['version']
+version = bower_info['track_version']
 copyright_text = <<END
 /*
     Rola UI Framework
