@@ -14,10 +14,14 @@
     }
 }
 
-// a simple container
-.wrapper {
+.container-fluid {
+    margin:0 auto;
     width:90%;
-    margin:auto;
+    @include clearfix;
+}
+
+.container-full {
+    width:100%;
 }
 
 .row {
