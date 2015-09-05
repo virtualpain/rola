@@ -20,30 +20,7 @@ ul,ol {
             float:left;
         }
     }
-
-    &.nav-tabs {
-        @extend .nav-horizontal;
-        border-bottom: 1px solid $link-color;
-        li {
-            a {
-                &:hover {
-                    background-color: lighten($link-color,40%);
-                }
-            }
-            &.active {
-                a {
-                    background-color: $link-color;
-                    color:$white;
-                }
-            }
-        }
-        &.tab-vertical {
-            border-bottom: 0;
-            li {
-                float:none;
-            }
-        }
-    }
+    
     &.nav-sub,&.sub-nav,&.nav-sub-nav {
         @extend .nav-horizontal;
         background-color: #F2F2F2;
@@ -74,32 +51,5 @@ ul,ol {
     a {
         display: inline-block;
         margin-right: 10px;
-    }
-}
-
-// Tab container
-.tab-container {
-    @include clearfix;
-    &.tab-vertical {
-        // TODO make sure in mobile, all width become 100%
-        ul,ol {
-            &.nav-tabs {
-                float:left;
-                width: 20%;
-                max-width: 20%;
-                border-bottom: 0;
-                li {
-                    float:none;
-                }
-            }
-        }
-        .tab-contents {
-            float:left;
-            width:80%;
-            max-width:80%;
-            .tab-content {
-                padding-left:1rem;
-            }
-        }
     }
 }
