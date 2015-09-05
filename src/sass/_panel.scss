@@ -2,15 +2,43 @@
     margin:1rem 0;
     color:$panel-default-color;
     background-color: $panel-default-bgcolor;
-    border:1px solid $border-color;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border-color;
     &.panel-padded {
         padding:$panel-padding;
     }
+    &.panel-info {
+        border-color: $info-color;
+        .panel-title {
+            background-color: $info-color;
+            color:$white;
+        }
+    }
+    &.panel-success {
+        border-color: $success-color;
+        .panel-title {
+            background-color: $success-color;
+        }
+    }
+    &.panel-warning {
+        border-color: $warning-color;
+        .panel-title {
+            background-color: $warning-color;
+        }
+    }
+    &.panel-danger {
+        border-color: $danger-color;
+        .panel-title {
+            background-color: $danger-color;
+        }
+    }
     .panel-title {
         padding:$panel-padding;
+        background-color: $border-color;
     }
     .panel-content
     {
-        padding:$panel-padding*1.5;
+        padding:$panel-padding;
     }
 }
