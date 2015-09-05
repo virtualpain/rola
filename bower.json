@@ -1,6 +1,6 @@
 {
   "name": "rola",
-  "track_version": "0.2.1",
+  "track_version": "0.2.2",
   "authors": [
     "Alvina Putri nivni91@gmail.com"
   ],
@@ -8,7 +8,11 @@
       "src/sass/rola.scss"
   ],
   "dependencies": {
-      "jquery":"~2.1.4"
+      "jquery":">= 2.1.4",
+      "slick.js":">= 1.5.8",
+      "jquery-modal":">= 0.5.8",
+      "tooltipster":">=3.3.0",
+      "fontawesome":">=4.4.0"
   },
   "description": "Very simple CSS Framework",
   "keywords": [
