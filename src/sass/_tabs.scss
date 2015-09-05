@@ -6,7 +6,7 @@ ul,ol {
         li {
             a {
                 &:hover {
-                    background-color: lighten($link-color,40%);
+                    background-color:$grey-lighten-3;
                 }
             }
             &.active {
@@ -22,25 +22,6 @@ ul,ol {
 // With Tab container
 .tab-container {
     @include clearfix;
-    ul,ol {
-        &.nav-tabs {
-            @extend .nav-horizontal;
-            border-bottom: 1px solid $link-color;
-            li {
-                a {
-                    &:hover {
-                        background-color: lighten($link-color,40%);
-                    }
-                }
-                &.active {
-                    a {
-                        background-color: $link-color;
-                        color:$white;
-                    }
-                }
-            }
-        }
-    }
     &.tab-vertical {
         ul,ol {
             &.nav-tabs {
