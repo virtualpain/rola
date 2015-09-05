@@ -30,3 +30,9 @@
 .muted {
     color:$muted-color;
 }
+
+ul,ol {
+    &.no-style-list {
+        @include no-style-list
+    }
+}
