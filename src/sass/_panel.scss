@@ -1,6 +1,5 @@
 .panel {
     margin:1rem 0;
-    color:$panel-default-color;
     background-color: $panel-default-bgcolor;
     border-width: 1px;
     border-style: solid;
@@ -36,6 +35,7 @@
     .panel-title {
         padding:$panel-padding;
         background-color: $border-color;
+        font-weight: bold;
     }
     .panel-content
     {
