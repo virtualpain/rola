@@ -1,6 +1,6 @@
 # ROLA
 
-Rola is UI Framework created to help you build website quickly with pre made
+Rola is Web UI Framework created to help you build website quickly with pre made
 components and you can even customize what you need using Rola's SASS mixins,
 variables, among other things.
 
