@@ -72,3 +72,5 @@ task :css => [:compile_sass]
 task :sass do
     sh "sass --watch --scss --style compressed --sourcemap=none src/sass/rola.scss:css/rola.min.css"
 end
+
+task :js => [:minify_js]
