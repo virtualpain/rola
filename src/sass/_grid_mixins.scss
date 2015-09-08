@@ -1,0 +1,81 @@
+@mixin container()
+{
+    @include clearfix;
+    margin:0 auto;
+    max-width:1280px;
+    width: 90%;
+    @include medium-and-up {
+        width:85%;
+    }
+    @include large-and-up {
+        width:70%;
+    }
+}
+
+@mixin full-container
+{
+    width:100%;
+}
+
+@mixin fluid-container
+{
+    @include clearfix;
+    margin:0 auto;
+    width:90%;
+}
+
+@mixin row
+{
+    @include clearfix;
+    margin:0 (-1*$gutter/2);
+}
+
+@mixin column($column:null)
+{
+    @include border-box;
+    float:left;
+    padding:0 ($gutter/2);
+}
+
+@mixin small-column($size:12)
+{
+    margin-left:0;
+    width:(100/($columns/$size)) * 1%;
+}
+
+@mixin small-column-offset($size:1)
+{
+    margin-left:(100/($columns/$size)) * 1%;
+}
+
+@mixin medium-column($size:12)
+{
+    @include medium-and-up
+    {
+        margin-left:0;
+        width:(100/($columns/$size)) * 1%;
+    }
+}
+
+@mixin medium-column-offset($size:1)
+{
+    @include medium-and-up {
+        margin-left:(100/($columns/$size)) * 1%;
+    }
+}
+
+@mixin large-column($size:12)
+{
+    @include large-and-up
+    {
+        margin-left:0;
+        width:(100/($columns/$size)) * 1%;
+    }
+}
+
+@mixin large-column-offset($size:1)
+{
+    @include large-and-up {
+        margin-left:(100/($columns/$size)) * 1%;
+    }
+}
