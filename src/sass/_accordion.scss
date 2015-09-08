@@ -2,12 +2,14 @@
     margin:10px 0;
     border: 1px solid $border-color;
     .accordion-content {
+        border-bottom:1px solid $border-color;
         .accordion-title {
             cursor:pointer;
             font-weight: bold;
             background-color: $accordion-title-bgcolor;
         }
         .accordion-text {
+            border-top: 1px solid $border-color;
             display: none;
             background-color: $accordion-text-bgcolor;
             &.active {
@@ -16,7 +18,9 @@
         }
         .accordion-title,.accordion-text {
             padding:10px;
-            border-bottom: 1px solid $border-color;
+        }
+        &:last-child {
+            border-bottom: 0;
         }
     }
 }
