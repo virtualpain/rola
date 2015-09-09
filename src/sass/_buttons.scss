@@ -4,7 +4,7 @@
     text-align: center;
     text-transform: uppercase;
     outline: 0 none;
-    line-height: 24px;
+    line-height: 18px;
 
     border-radius:2px;
 
@@ -31,16 +31,23 @@
 
     &.btn-large {
         font-size: 1.2rem;
-        height: 45px;
+        // height: 45px;
         line-height: 45px;
     }
     &.btn-block {
         display:block;
+        width: 100%;
         @include border-box;
     }
     &.btn-link {
         background-color: transparent;
         color:$link-color;
+        // @include shadow(0);
+        box-shadow: none;
+        &:hover {
+            box-shadow: none;
+            // @include shadow(0);
+        }
     }
 }
 
