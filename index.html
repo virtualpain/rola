@@ -29,6 +29,32 @@
         </nav>
         <div class="container">
             <h1 class="text-center">Rola UI Framework</h1>
+            <h2>Installation</h2>
+            <p>
+                The easiest way to install Rola is simply use <code>bower install rola</code>.
+                It will download all necessary dependencies.
+                Then in your webpage, include these following things into <code>head</code>:
+            </p>
+<pre>
+&#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/css/rola.min.css&#x22; media=&#x22;screen&#x22; charset=&#x22;utf-8&#x22;&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/css/rola-other.min.css&#x22; media=&#x22;screen&#x22; charset=&#x22;utf-8&#x22;&#x3E;
+&#x3C;script src=&#x22;/bower_components/jquery/dist/jquery.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/bower_components/fontawesome/css/font-awesome.min.css&#x22; media=&#x22;screen&#x22; title=&#x22;no title&#x22; charset=&#x22;utf-8&#x22;&#x3E;
+</pre>
+            <p>
+                And these to the near of <code>&#x3C;/body&#x3E;</code>:
+            </p>
+<pre>
+&#x3C;script src=&#x22;/js/rola.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;/bower_components/holderjs/holder.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;/bower_components/jquery-modal/jquery.modal.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script src=&#x22;/bower_components/tooltipster/jquery.tooltipster.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
+</pre>
+            <div class="panel panel-padded panel-warning yellow-lighten-2">
+                <strong>NOTE</strong>
+                <em>You might need to change the URL to the components, and other files</em>.
+            </div>
             <h2>Typography</h2>
             <p>
                 <strong>Lorem</strong> <em>ipsum</em> dolor sit <a href="javascript:;">amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -270,6 +296,12 @@
                     <button type="button" name="button" class="btn bg-green">Button</button>
                 </p>
             </form>
+            <div class="row form">
+                <div class="col s12 m3 l3"><input type="text"></div>
+                <div class="col s12 m3 l3"><input type="email"></div>
+                <div class="col s12 m3 l3"><select name="" id=""><option value="1">Option</option></select></div>
+                <div class="col s12 m3 l3"><button class="btn btn-block">Test height</button></div>
+            </div>
             <hr>
             <h2>Other Components</h2>
             <h3>Collection</h3>
@@ -561,24 +593,29 @@
                 Carousel in rola provided by <a href="http://kenwheeler.github.io/slick/">Slick.js</a>
                 which included by default when you installed Rola via bower as dependency.
             </p>
-            <ul class="carousel">
-                <li><img data-src="holder.js/100x100" alt="banana"></li>
-                <li><img data-src="holder.js/100x100" alt="banana"></li>
-            </ul>
-            <h3>Tooltips</h3>
+            <div class="carousel">
+                <div><img data-src="holder.js/1000x100?theme=vine" alt="banana"></div>
+                <div><img data-src="holder.js/1000x100?theme=social" alt="banana"></div>
+            </div>
+            <h3>Tooltips <span class="label yellow-lighten-1 text-black">JS</span></h3>
             <p>
                 Tooltips provided by <a href="http://iamceege.github.io/tooltipster/">Tooltipster</a>
             </p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Harum quibusdam neque, reiciendis voluptatibus impedit
+                Harum quibusdam <span class="tooltip" title="Hello This is tooltips"><strong>neque</strong></span>, reiciendis voluptatibus impedit
                 explicabo, cum exercitationem libero. Suscipit illo sed alias,
                 incidunt voluptatibus veritatis id veniam unde aspernatur natus?
             </p>
         </div>
-        <script src="/js/rola.min.js" charset="utf-8"></script>
         <script src="/bower_components/holderjs/holder.min.js" charset="utf-8"></script>
         <script src="/bower_components/jquery-modal/jquery.modal.min.js" charset="utf-8"></script>
-        <script src="/bower_components/tooltipster/jquery.tooltipster.min.js" charset="utf-8"></script>
+        <script src="/bower_components/tooltipster/js/jquery.tooltipster.min.js" charset="utf-8"></script>
+        <script src="/bower_components/slick.js/slick/slick.min.js" charset="utf-8"></script>
+        <script src="/js/rola.min.js" charset="utf-8"></script>
+        <script type="text/javascript">
+        $('.carousel').slick();
+        $('.tooltip').tooltipster();
+        </script>
     </body>
 </html>
