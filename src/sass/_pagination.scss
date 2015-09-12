@@ -1,4 +1,3 @@
-// TODO move all borders to a element instead li
 ul,ol {
     &.pagination {
         @include no-style-list;
