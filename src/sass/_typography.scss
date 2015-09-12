@@ -26,6 +26,11 @@ blockquote {
     padding:.5rem 1rem;
 }
 
-code {
+code,pre {
     color:$code-color;
+}
+
+pre {
+    padding:10px;
+    background-color: $grey-lighten-4;
 }
