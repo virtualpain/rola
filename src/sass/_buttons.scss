@@ -21,11 +21,14 @@
     }
     i {
         &.material-icons,&.fa {
-            font-size:1.2rem;
+            font-size:1rem;
             padding:0 .5rem;
         }
-        &.right,&left {
-
+        &.right {
+            padding-left: 1rem;
+        }
+        &.left {
+            padding-right: 1rem;
         }
     }
 
