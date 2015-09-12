@@ -67,11 +67,13 @@
         }
     }
 }
-// TODO on mobile, margin separator should be 0
+
 .btn-toolbar {
     @include clearfix;
     .btn-group {
         float:left;
-        margin-right: 10px;
+        @include medium-and-up {
+            margin-right: 10px;
+        }
     }
 }
