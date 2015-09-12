@@ -1,0 +1,9 @@
+// By default, Rola using Tooltipster for
+// the tooltips library. If you want to use another library,
+// or roll out your own, create a scss file and import it here.
+
+@import "tooltipster";
+
+.tooltip {
+    cursor:pointer;
+}
