@@ -37,6 +37,11 @@
         // height: 45px;
         line-height: 45px;
     }
+    &.btn-small {
+        font-size:.8rem;
+        line-height: 15px;
+    }
+
     &.btn-block {
         display:block;
         width: 100%;
@@ -51,6 +56,27 @@
             box-shadow: none;
             // @include shadow(0);
         }
+    }
+
+    &.btn-primary {
+        background-color: $primary-color;
+        color:$white;
+    }
+    &.btn-info {
+        background-color: $info-color;
+        color:$white;
+    }
+    &.btn-danger {
+        background-color: $danger-color;
+        color:$white;
+    }
+    &.btn-warning {
+        background-color: $warning-color;
+        color:$black;
+    }
+    &.btn-success {
+        background-color: $success-color;
+        color:$white;
     }
 }
 
