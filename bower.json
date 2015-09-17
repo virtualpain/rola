@@ -28,7 +28,6 @@
     "bower_components",
     "test",
     "tests",
-    "IdeasNTodos.md",
     "Gemfile"
   ]
 }
