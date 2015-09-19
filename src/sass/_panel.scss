@@ -12,12 +12,19 @@
         .panel-title {
             background-color: $info-color;
             color:$white;
+            .panel-toggle {
+                color:$white;
+            }
         }
     }
     &.panel-success {
         border-color: $success-color;
         .panel-title {
             background-color: $success-color;
+            color:$white;
+            .panel-toggle {
+                color:$white;
+            }
         }
     }
     &.panel-warning {
@@ -30,12 +37,23 @@
         border-color: $danger-color;
         .panel-title {
             background-color: $danger-color;
+            color:$white;
+            .panel-toggle {
+                color:$white;
+            }
         }
     }
     .panel-title {
         padding:$panel-padding;
         background-color: $border-color;
         font-weight: bold;
+        @include clearfix;
+        .panel-toggle {
+            display:block;
+            // padding:1rem;
+            float:right;
+            color:$black;
+        }
     }
     .panel-content
     {
