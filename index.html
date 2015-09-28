@@ -523,8 +523,8 @@
             </p>
             <div class="tab-container tab-vertical">
                 <ul class="nav-tabs">
-                    <li data-tab='1'><a href="javascript:;">Menu 1</a></li>
-                    <li data-tab='2'><a href="javascript:;">Menu 2</a></li>
+                    <li data-tab="1"><a href="javascript:;">Menu 1</a></li>
+                    <li data-tab="2"><a href="javascript:;">Menu 2</a></li>
                 </ul>
                 <div class="tab-contents">
                     <div class="tab-content" id="tab-content-1">
@@ -646,6 +646,15 @@
                     </p>
                 </div>
             </div>
+            <h3>Date picker</h3>
+            <p>
+                Date picker provided by <a href="http://amsul.ca/pickadate.js">pickadate.js</a>.
+            </p>
+            <div class="form">
+                <p>
+                    <input type="text" class="datepicker">
+                </p>
+            </div>
         </div>
         <footer class="text-center">
             <p>
@@ -662,10 +671,13 @@
         <script src="/bower_components/jquery-modal/jquery.modal.min.js" charset="utf-8"></script>
         <script src="/bower_components/tooltipster/js/jquery.tooltipster.min.js" charset="utf-8"></script>
         <script src="/bower_components/slick.js/slick/slick.min.js" charset="utf-8"></script>
+        <script src="/bower_components/pickadate/lib/compressed/picker.js" charset="utf-8"></script>
+        <script src="/bower_components/pickadate/lib/compressed/picker.date.js" charset="utf-8"></script>
         <script src="/js/rola.min.js" charset="utf-8"></script>
         <script type="text/javascript">
         $('.carousel').slick();
         $('.tooltip').tooltipster();
+        $(".datepicker").pickadate();
         </script>
     </body>
 </html>
