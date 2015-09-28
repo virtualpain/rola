@@ -30,11 +30,19 @@
     margin:0 (-1*$gutter/2);
 }
 
-@mixin column($column:null)
+@mixin column()
 {
     @include border-box;
     float:left;
     padding:0 ($gutter/2);
+}
+
+@mixin col($small:12,$medium:12,$large:12)
+{
+    @include column();
+    @include small-column($small);
+    @include medium-column($medium);
+    @include large-column($large);
 }
 
 @mixin small-column($size:12)
