@@ -5,6 +5,7 @@ var concats = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
+gulp.task('default',['sass','js']);
 
 gulp.task('sass',function(){
     gulp.src('src/sass/**/*.scss')
