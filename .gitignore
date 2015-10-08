@@ -3,3 +3,4 @@ build/*
 .sass-cache
 .imdone
 bower_components
+node_modules

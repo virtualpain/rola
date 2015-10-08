@@ -1,0 +1,17 @@
+{
+  "name": "rola",
+  "version": "1.0.0",
+  "description": "Simple CSS Framework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtualpain/rola.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1"
+  }
+}
