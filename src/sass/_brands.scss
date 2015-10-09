@@ -2,17 +2,21 @@
 $color-facebook:#3864A3;
 $color-twitter:#2AA9E0;
 $color-google:#4285F3;
-$color-googleplus:#EA4335;
+$color-google-plus:#EA4335;
+$color-pinterest:#CD2129;
 
 .bg-facebook {
-    background-color: $color-facebook;
+    background-color: $color-facebook !important;
 }
 .bg-twitter {
-    background-color: $color-twitter;
+    background-color: $color-twitter !important;
 }
 .bg-google {
-    background-color: $color-google;
+    background-color: $color-google !important;
 }
-.bg-googleplus {
-    background-color: $color-googleplus;
+.bg-google-plus {
+    background-color: $color-google-plus !important;
+}
+.bg-pinterest {
+    background-color: $color-pinterest !important;
 }
