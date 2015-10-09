@@ -61,7 +61,8 @@ $breadcrumbs-padding:5px 10px;
 $button-default-color:$grey !default;
 $button-default-text-color:$white !default;
 $button-hover-transition-time:.5s !default;
-$button-padding:10px 1rem;
+$button-padding:10px 1rem !default;
+$button-radius:3px !default;
 
 // panel
 $panel-default-bgcolor:$grey-lighten-4 !default;
