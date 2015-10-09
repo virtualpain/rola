@@ -1,6 +1,6 @@
 # ROLA
 
-Rola is Web UI Framework created to help you build website quickly with pre made
+Rola is CSS Framework created to help you build website quickly with pre made
 components and you can even customize what you need using Rola's SASS mixins,
 variables, among other things.
 
@@ -10,9 +10,10 @@ Use bower to download
 
 `bower install rola`
 
-To develop and build Rola, you will need Ruby and bunch of ruby gems defined
-in `Gemfile`.
+To build by yourself, you will need Node.js (and NPM). Simply do `npm install`
+in the root folder to install dependencies. And then `gulp` to build the SASS
+and minify JS files.
 
 ## License
 
-MIT. See `License.md` file.
+MIT.
