@@ -5,14 +5,11 @@
     "Alvina Putri nivni91@gmail.com"
   ],
   "main": [
-      "src/sass/rola.scss"
+    "src/sass/rola.scss"
   ],
   "dependencies": {
-      "jquery":">= 2.1.4",
-      "slick.js":">= 1.5.8",
-      "jquery-modal":">= 0.5.8",
-      "tooltipster":">=3.3.0",
-      "fontawesome":">=4.4.0"
+    "jquery": ">= 2.1.4",
+    "fontawesome": ">=4.4.0"
   },
   "description": "Very simple CSS Framework",
   "keywords": [
@@ -29,5 +26,8 @@
     "test",
     "tests",
     "Gemfile"
-  ]
+  ],
+  "devDependencies": {
+    "holderjs": "~2.8.2"
+  }
 }
