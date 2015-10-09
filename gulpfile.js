@@ -4,6 +4,7 @@ var renames = require('gulp-rename');
 var concats = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
+var watch = require('gulp-watch');
 
 gulp.task('default',['sass','js']);
 
@@ -24,4 +25,12 @@ gulp.task('js',function(){
         .pipe(renames('rola.min.js'))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./dist/js'));
+});
+
+gulp.task('watch:sass',function(){
+    return gulp.src('src/sass/**/*.scss')
+        .pipe(watch('src/sass/**/*.scss'))
+        .pipe(sass())
+        .pipe(renames('rola.min.css'))
+        .pipe(gulp.dest('./dist/css'));
 });
