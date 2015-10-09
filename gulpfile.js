@@ -28,9 +28,5 @@ gulp.task('js',function(){
 });
 
 gulp.task('watch:sass',function(){
-    return gulp.src('src/sass/**/*.scss')
-        .pipe(watch('src/sass/**/*.scss'))
-        .pipe(sass())
-        .pipe(renames('rola.min.css'))
-        .pipe(gulp.dest('./dist/css'));
+    return gulp.watch('src/sass/**/*.scss',['sass'])
 });
