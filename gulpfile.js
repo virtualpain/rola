@@ -17,6 +17,14 @@ gulp.task('sass',function(){
         .pipe(gulp.dest('./dist/css'));
 });
 
+// This task only compile SASS
+gulp.task('sass:compile',function(){
+    gulp.src('src/sass/**/*.scss')
+        .pipe(sass())
+        .pipe(renames('rola.min.css'))
+        .pipe(gulp.dest('./dist/css'));
+});
+
 gulp.task('js',function(){
     gulp.src(['src/libs/js/**/*.js','src/js/**/*.js'])
         .pipe(sourcemaps.init())
