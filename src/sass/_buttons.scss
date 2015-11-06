@@ -10,6 +10,9 @@
 
     background-color: $button-default-color;
     color:$button-default-text-color;
+    &:hover {
+        color:$button-default-text-color;
+    }
 
     cursor:pointer;
     display: inline-block;
