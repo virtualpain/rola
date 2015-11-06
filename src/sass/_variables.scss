@@ -13,9 +13,11 @@ $color:#444444 !default;
 $line-height:1.5rem !default;
 $code-color:$red !default;
 $muted-color:$grey !default;
+$background-color:$white;
 
 // links
-$link-color:$blue !default;
+$link-color:$primary-color !default;
+$link-color-hover:$blue-darken-2 !default;
 
 // media query breakpoint
 $small:600px !default;
@@ -40,7 +42,7 @@ $table-zebra-bgcolor: $grey-lighten-3 !default;
 ///////////////
 
 // navbar
-$navbar-background-color:$blue !default;
+$navbar-background-color:$primary-color !default;
 $navbar-text-color:$white !default;
 $navbar-link-color:$white !default;
 
