@@ -3,11 +3,15 @@ body {
     font-size:$font-size;
     color:$color;
     line-height: $line-height;
+    background-color: $background-color;
 }
 
 a {
     color:$link-color;
     text-decoration: none;
+    &:hover {
+        color:$link-color-hover;
+    }
 }
 
 hr {
