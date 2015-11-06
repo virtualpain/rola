@@ -37,7 +37,6 @@
 <pre>
 &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
 &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/css/rola.min.css&#x22; media=&#x22;screen&#x22; charset=&#x22;utf-8&#x22;&#x3E;
-&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/css/rola-other.min.css&#x22; media=&#x22;screen&#x22; charset=&#x22;utf-8&#x22;&#x3E;
 &#x3C;script src=&#x22;/bower_components/jquery/dist/jquery.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
 &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/bower_components/fontawesome/css/font-awesome.min.css&#x22; media=&#x22;screen&#x22; title=&#x22;no title&#x22; charset=&#x22;utf-8&#x22;&#x3E;
 </pre>
@@ -46,8 +45,6 @@
             </p>
 <pre>
 &#x3C;script src=&#x22;/js/rola.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
-&#x3C;script src=&#x22;/bower_components/jquery-modal/jquery.modal.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
-&#x3C;script src=&#x22;/bower_components/tooltipster/jquery.tooltipster.min.js&#x22; charset=&#x22;utf-8&#x22;&#x3E;&#x3C;/script&#x3E;
 </pre>
             <div class="panel panel-padded panel-warning yellow-lighten-2">
                 <strong>NOTE</strong>
@@ -186,11 +183,33 @@
             </table>
             <h2>Buttons</h2>
             <p>
+                Button can be applied to <code>button</code>,
+                <code>input (button)</code>,
+                <code>input (submit)</code>,
+                <code>input (reset)</code>,
+                and
+                <code>a</code>
+            </p>
+            <p>
                 <input type="button" name="name" value="Button" class="btn">
                 <input type="submit" name="name" value="Button" class="btn">
                 <input type="reset" name="name" value="Button" class="btn">
                 <button type="button" name="button" class="btn">Button</button>
                 <a href="#" class="btn">Button</a>
+            </p>
+            <p>
+                Button have 5 basic colors: default, primary, warning, danger, and success.
+                Note: In this example <code>btn-primary</code>
+                are probably in the same color as <code>btn-info</code> because the primary color on Rola
+                by default is blue.
+            </p>
+            <p>
+                <button class="btn">Normal</button>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
             </p>
             <p>
                 <button type="button" name="button" class="btn"><i class="fa fa-globe left"></i>Button</button>
