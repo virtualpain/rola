@@ -2,8 +2,7 @@
 // is to be applied on jquery-modal.
 .modal {
     display: none;
-    min-width: 400px;
-    max-width: 1000px;
+    width: 500px;
     background: #fff;
     // padding: 15px 30px;
     border-radius: 2px;
@@ -36,5 +35,9 @@
     }
     .modal-content,.modal-header,.modal-action {
         padding:10px 15px;
+    }
+
+    &.wide-modal {
+        width: 96%;
     }
 }
