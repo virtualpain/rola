@@ -20,7 +20,7 @@ ul,ol {
             float:left;
         }
     }
-    
+
     &.nav-sub,&.sub-nav,&.nav-sub-nav {
         @extend .nav-horizontal;
         background-color: #F2F2F2;
