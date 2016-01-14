@@ -63,7 +63,7 @@ $breadcrumbs-padding:5px 10px;
 $button-default-color:$grey !default;
 $button-default-text-color:$white !default;
 $button-hover-transition-time:.5s !default;
-$button-padding:10px 1rem !default;
+$button-padding:.6rem 1rem !default;
 $button-radius:3px !default;
 
 // panel
@@ -79,6 +79,13 @@ $label-default-color:$white !default;
 $nav-hover-color:darken($link-color,20%) !default;
 $nav-hover-bgcolor:$grey-lighten-4 !default;
 
+// Sub navigation
+$sub-nav-bgcolor:#F2F2F2;
+$sub-nav-color:#999;
+$sub-nav-link-color:$sub-nav-color;
+$sub-nav-link-hover-color:$grey-darken-1;
+$sub-nav-link-active-bgcolor:$link-color;
+$sub-nav-link-active-color:$white;
 
 // slick carousel
 $slick-font-path: "../fonts/" !default;
