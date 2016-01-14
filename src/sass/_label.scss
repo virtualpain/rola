@@ -1,8 +1,8 @@
 .label {
     font-size:.75rem;
-    padding:2px 4px;
+    padding:0 4px;
     vertical-align: middle;
     background-color: $label-default-bgcolor;
     color: $label-default-color;
-    display: inline-block;
+    display: inline;
 }
