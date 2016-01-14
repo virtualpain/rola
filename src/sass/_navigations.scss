@@ -23,26 +23,33 @@ ul,ol {
 
     &.nav-sub,&.sub-nav,&.nav-sub-nav {
         @extend .nav-horizontal;
-        background-color: #F2F2F2;
-        color:#999;
+        background-color: $sub-nav-bgcolor;
+        color:$sub-nav-color;
         font-size: .8rem;
         li {
             padding:5px;
             a {
                 padding:1px 5px;
-                color:#999;
+                color:$sub-nav-link-color;
                 &:hover {
-                    color:$grey-darken-1;
+                    color:$sub-nav-link-hover-color;
+                    background-color: transparent;
                 }
             }
             &.active {
                 a {
-                    background-color: $link-color;
-                    color:$white;
+                    background-color: $sub-nav-link-active-bgcolor;
+                    color:$sub-nav-link-active-color;
                 }
             }
             &.title {
-                // padding:10px;
+                a {
+                    cursor:default;
+                    font-weight: bold;
+                    &:hover {
+                        color:$sub-nav-color;
+                    }
+                }
             }
         }
     }
