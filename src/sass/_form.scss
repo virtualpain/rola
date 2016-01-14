@@ -1,14 +1,16 @@
 form,.form {
     label {
         display: block;
-        font-weight: bold;
-        padding:1rem 0 .5rem;
+        // font-weight: bold;
+        padding:0;
+        margin:0;
         cursor:pointer;
-        // font-size: .8rem;
+        font-size: .8rem;
         i {
             margin-right: 1rem;
         }
         &.radio,&.checkbox {
+            font-size: 1rem;
             font-weight: normal;
             display: inline;
             cursor:pointer;
@@ -43,13 +45,14 @@ form,.form {
     {
         // cursor:pointer;
         @include border-box;
-        line-height: 18px;
+        display: inline-block;
+        // line-height: 18px;
         width: 100%;
         border:0;
-        padding:.5rem;
-        border: 1px solid $border-color;
+        padding:.5rem 0;
+        border-bottom: 1px solid darken($border-color,10%);
         &:focus {
-            border:1px solid $primary-color;
+            border-bottom:1px solid $primary-color;
         }
         @include medium-and-down()
         {
@@ -76,18 +79,16 @@ form,.form {
         background-position: 100% center;
         background-color: #fff;
 
-        padding:0.5rem;
+        padding:.5rem;
         // display: block;
         width: 100%;
         // margin:auto;
         line-height: 16px;
         @include border-box;
         border:0;
-        border: 1px solid $border-color;
-        @include medium-and-down()
-        {
-            border:0;
-            border-bottom:1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        &:focus,&:active {
+            outline: 0;
         }
     }
 

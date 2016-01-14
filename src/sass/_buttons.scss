@@ -10,12 +10,12 @@
 
     background-color: $button-default-color;
     color:$button-default-text-color;
+    cursor:pointer;
+    display: inline-block;
     &:hover {
         color:$button-default-text-color;
     }
 
-    cursor:pointer;
-    display: inline-block;
     @include transition-shadow($button-hover-transition-time);
 
     @include shadow(1);
