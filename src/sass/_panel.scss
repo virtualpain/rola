@@ -1,9 +1,7 @@
 .panel {
     margin:1rem 0;
     background-color: $panel-default-bgcolor;
-    border-width: 1px;
-    border-style: solid;
-    border-color: $border-color;
+    @include shadow(1);
     &.panel-padded {
         padding:$panel-padding;
     }
